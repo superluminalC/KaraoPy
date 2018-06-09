@@ -9,8 +9,8 @@ If you don't want to download youtube videos, this program is not for you. You m
 
 ## Features
 * Downloads video from Youtube (or any youtube-dl supported site), saves in a folder and puts in a playlist
-* Uses vlc as player
-* Simple csv database where the metadata from videos is stored
+* Uses VLC as player
+* Simple csv database where the metadatas from videos are stored
 * Integrated database search
 
 ## How to use
@@ -28,6 +28,40 @@ Because I don't know how to carry this imports around, you should download it ma
 * `py -m pip install kivy`
 * `py -m pip install youtube-dl`
 * `py -m pip install vlc`
+
+### Before execute it
+Just after the first imports of script, change the global variable `VLC_PATH` to the folder where the `vlc.exe` is installed. Remember to use double backslashes (\\) if you are in Windows. Moreover, I recommend you to change the global variable `WAIT_TO_NEXT_SONG` to a value that fit your desires.
+
+## Known bugs
+* Kivy
+* No support for search using IME, due limitation of... Kivy. I discovered a half-assed workaround, but I have not implemented yet
+* High CPU usage (~80% in my Core i5 2nd generation)
+* High memory usage
+
+
+## FAQ (Frequently Asked Questions)
+
+### Can I manually copy videos to `songs` folder?
+Yes. Every time the program executes, it checks the folder for new (or deleted) files and update the database accordingly.
+
+### Can I manually delete videos from `songs` folder?
+Yes, read question above.
+
+### How do I modify the metadata of my videos?
+Open the `karaoke_database.csv`, located in the folder you have put your `KaraoPy.py`. The fields are separated by a (not commom) vertical bar (|). Change the respective title and artist field for each entry. Do not change the others fields!
+
+### Why does KaraoPy spawn three different processes?
+Because Kivy. I searched a lot for a solution with no avail. If I use thread, the user interface become very, VERY laggy. I had to live with it.
+
+### Why the fuck does KaraoPy uses 80% of my CPU?
+Good question, I would like to know too. If you know how to solve, send me a message.
+
+### KaraoPy... Kara oPy... oPy... hey, is it a innuendo?
+Sure.
+
+
+
+
 
 
 
