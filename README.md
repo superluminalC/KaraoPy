@@ -24,9 +24,9 @@ This software needs the following external Python modules:
 * youtube-dl
 * vlc
 Because I don't know how to carry this imports around, you should download it manually. Make sure to have your Python installation in `PATH` in your Windows. Open the command prompt and type:
-*    py -m pip install kivy
-*    py -m pip install youtube-dl
-*    py -m pip install vlc
+    *py -m pip install kivy
+    *py -m pip install youtube-dl
+    *py -m pip install vlc
 
 
 
