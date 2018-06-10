@@ -1,7 +1,7 @@
 # KaraoPy
 A simple software written in Python/Kivy focused on download (karaoke or not) videos from Youtube and make a automatic playlist from it. 
 
-[Why did you make it?](#why-did-you-make-it)\n
+[Why did you make it?](#why-did-you-make-it)/n
 [Why should I use it?](#why-should-i-use-it)
 
 [Features](#features)
