@@ -11,7 +11,7 @@ A simple software written in Python/Kivy focused on download (karaoke or not) vi
 
 
 ## Why did you make it?  
-After I could not make a reserve at a commercial karaoke with my friends, I made a party at home using a very simple Python/Kivy program to add URLs of karaoke videos from Youtube, download it, put in a playlist and play automatically in a TV connected do my notebook. I had time and energy to make it from a very small hobby project to a not-so-small-I-spend-too-much-time-on-this-help-me, resulting in this shit -- I mean, the beautifully constructed Python program. 
+After I could not make a reserve at a commercial karaoke with my friends, I made a party at home using a very simple Python/Kivy program to add URLs of karaoke videos from Youtube, download it, put in a playlist and play automatically in a TV connected do my notebook. I had time and energy to make it from a very small hobby project to a not-so-small-I-spend-too-much-time-on-this-help-me, resulting in this shit -- I mean, this beautifully constructed Python program. 
 
 ## Why should I use it?
 If you don't want to download youtube videos, this program is not for you. You may just add your videos to a youtube playlist. But, if you want to save them in your PC, or use videos from other websites that do not support playlist (refer to youtube-dl repository to see a list of supported websites), this may be for you.
