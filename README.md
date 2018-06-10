@@ -1,3 +1,5 @@
+![KaraoPy logo](https://github.com/superluminalC/KaraoPy/blob/master/icons/KaraoPy.png "KaraoPy logo")
+
 # KaraoPy
 A simple software written in Python/Kivy focused on download (karaoke or not) videos from Youtube and make a automatic playlist from it. 
 
