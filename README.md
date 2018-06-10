@@ -4,7 +4,7 @@ A simple software written in Python/Kivy focused on download (karaoke or not) vi
 ## Summary
 <a href="#I">Why did you make it?</a>
 
-## Why did you make it? <a href="#I"></a> 
+## Why did you make it?  
 After I could not make a reserve at a commercial karaoke with my friends, I made a party at home using a very simple Python/Kivy program to add URLs of karaoke videos from Youtube, download it, put in a playlist and play automatically in a TV connected do my notebook. I had time and energy to make it from a very small hobby project to a not-so-small-I-spend-too-much-time-on-this-help-me, resulting in this shit -- I mean, the beautifully constructed Python program. 
 
 ## Why should I use it?
@@ -78,7 +78,7 @@ Do I hate it? Ok... I'm not a professional coder, I just do it by hobby, but I t
 ### KaraoPy... Kara oPy... oPy... hey, is it an innuendo?
 Surely.
 
-## Copyright
+## Copyright <a href="#I"></a>
 Besides the imports, fonts, and small snippets from Python documentation and modified version of the hash method, everything else was made by me, including logos and buttons designs. I have not choose yet which license, so I retain full copyright, but surely you can read, download, modify (fork), redistribute, make a executable and have fun, in a non-commercial way, and giving credits to me (link to the repository page on GitHub), and your modification (forking) or executable should have the same condition. And also the classic don't blame on me if your computer explodes. You use at your own risk!
 
 ## Final thoughts
