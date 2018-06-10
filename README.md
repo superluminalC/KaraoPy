@@ -44,6 +44,9 @@ Because I don't know how to carry this imports around, you should download it ma
 ### Before execute it
 Just after the first imports of script, change the global variable `VLC_PATH` to the folder where the `vlc.exe` is installed. Remember to use double backslashes (\\\\) if you are in Windows. Moreover, I recommend you to change the global variable `WAIT_TO_NEXT_SONG` to a value that fit your desires.
 
+### To execute
+Double-click on `KaraoPy.py` or via command prompt, `cd` to the installation folder and type `py KaraoPy.py`.
+
 ## Known bugs
 * Kivy
 * No support for search using IME (eg. Japanese characters), due limitation of... Kivy. I discovered a not perfect workaround, but I have not implemented yet
