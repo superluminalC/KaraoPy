@@ -54,7 +54,7 @@ Double-click on `KaraoPy.py` or via command prompt, `cd` to the installation fol
 * High memory usage
 * No support for different resolutions or pixels density besides my own screen
 * Non-ocidental and non-CJK characters may will render as squares
-* The current time on screen sometimes goes slightly fast or slightly slow, you need to concentrate on it to realize.
+* The current time on screen sometimes goes slightly fast or slightly slow, but you need to concentrate on it to realize
 * Me
 * Have I already said Kivy?
 
