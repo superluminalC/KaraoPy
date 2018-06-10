@@ -87,6 +87,9 @@ Yes, send me a message.
 ### Why do you hate so much Kivy?
 Do I hate it? Ok... I'm not a professional coder, I just do it by hobby, but I think that while Kivy made this program happen, the documentation is not good (one of main features, the KvLang, is largely ignored by documentation. I learned a lot about the language through Google searching); the explanation of the API lacks a "how to use"; you just can't type IME on a Kivy text input field; you need workaround for Kivy to work with threads; there is no fallback font when glyphs are not found in used font (e.g. Arial does not have Japanese glyphs. Word uses a fallback font which have; Kivy display squares), etc. I survived, but I've lost an arm and a leg while transmutating Kivy into my software. On other side, I just love Python! Easy, beautiful, a lot of modules and great documentation.
 
+### Wait, your program looks like a media player. Why don't I use VLC directly, manually putting videos on playlist?
+Yes, you can. But wouldn't be fun for me to write it!
+
 ### KaraoPy... Kara oPy... oPy... hey, is it an innuendo?
 Surely.
 
