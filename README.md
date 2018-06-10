@@ -5,6 +5,7 @@ A simple software written in Python/Kivy focused on download (karaoke or not) vi
 * [Why should I use it?](#why-should-i-use-it)
 * [Features](#features)
 * [How to use](#how-to-use)
+* [Known bugs](#known-bugs)
 * [FAQ (Frequently Asked Questions)](#faq-frequently-asked-questions) 
 * [Copyright](#copyright-)
 * [Final thoughts](#final-thoughts)
@@ -41,7 +42,7 @@ Because I don't know how to carry this imports around, you should download it ma
 ### Before execute it
 Just after the first imports of script, change the global variable `VLC_PATH` to the folder where the `vlc.exe` is installed. Remember to use double backslashes (\\) if you are in Windows. Moreover, I recommend you to change the global variable `WAIT_TO_NEXT_SONG` to a value that fit your desires.
 
-### Known bugs
+## Known bugs
 * Kivy
 * No support for search using IME (eg. Japanese characters), due limitation of... Kivy. I discovered a not perfect workaround, but I have not implemented yet
 * High CPU usage (~80% in my Core i5 2nd generation)
