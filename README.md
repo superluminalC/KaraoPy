@@ -34,9 +34,12 @@ Just after the first imports of script, change the global variable `VLC_PATH` to
 
 ### Known bugs
 * Kivy
-* No support for search using IME (eg. Japanese characters), due limitation of... Kivy. I discovered a half-assed workaround, but I have not implemented yet
+* No support for search using IME (eg. Japanese characters), due limitation of... Kivy. I discovered a not perfect workaround, but I have not implemented yet
 * High CPU usage (~80% in my Core i5 2nd generation)
 * High memory usage
+* No support for different resolutions or pixels density besides my own screen
+* Non-ocidental and non-CJK characters may will render as squares
+* The current time on screen sometimes goes slightly fast or slightly slow, you need to concentrate on it to realize.
 * Me
 * Have I already said Kivy?
 
@@ -49,19 +52,34 @@ Yes. Every time the program executes, it checks the folder for new (or deleted) 
 Yes, read question above.
 
 ### How do I modify the metadata of my videos?
-Open the `karaoke_database.csv`, located in the folder you have put your `KaraoPy.py`. The fields are separated by a (not commom) vertical bar (|). Change the respective title and artist field for each entry. Do not change the others fields!
+Open the `karaoke_database.csv`, located in the folder you have put your `KaraoPy.py`. The fields are separated by a (not commom) vertical bar (|). Change the respective title and artist field for each entry. You you need to write the metadata with vertical bar, put the contents of that field around double quotes ("This | is a example"). **Do not change the others fields! Do not modify while the program is running!**
 
 ### Why does KaraoPy spawn three different processes?
-Because Kivy. I searched a lot for a solution with no avail. If I use thread, the user interface become very, VERY laggy. I had to live with it.
+Because Kivy. I searched a lot for a solution with no avail. If I use threads, then user interface become very, VERY laggy. I had to live with it.
 
 ### Why the fuck does KaraoPy uses 80% of my CPU?
-Good question, I would like to know too. If you know how to solve, send me a message.
+Good question, I would like to know too. If you know how to solve, please, tell me.
 
 ### Why the user interface display messages is in a strange language?
-Because it is Hue lang-I mean, Portuguese. You can change that messages if you want. Almost all the variables in code are self-explanatory.
+Because it is Hue lang-I mean, Portuguese. You can change that messages if you want. Almost all the variables in code are self-explanatory (this_explain_why_I_use_a_lot_of_underscores).
 
-### KaraoPy... Kara oPy... oPy... hey, is it a innuendo?
-Sure.
+### Your code looks ugly, bad written, amateurish and do not follow Python guidelines.
+Is it even a question?
+
+### Ok, I want to modify it but I did not understand what you did. Can I contact you?
+Yes, send me a message.
+
+### Why do you hate so much Kivy?
+Do I hate it? Ok... I'm not a professional coder, I just do it by hobby, but I think that while Kivy made this program happen, the documentation is not good (one of main features, the KvLang, is largely ignored by documentation. I learned a lot about the language through Google searching); the explanation of the API lacks a "how to use"; you just can't type IME on a Kivy text input field; you need workaround for Kivy to work with threads; there is no fallback font when glyphs are not found in used font (e.g. Arial does not have Japanese glyphs. Word uses a fallback font which have; Kivy display squares), etc. I survived, but I've lost an arm and a leg while transmutating Kivy into my software. On other side, I just love Python! Easy, beautiful, a lot of modules and great documentation.
+
+### KaraoPy... Kara oPy... oPy... hey, is it an innuendo?
+Surely.
+
+## Copyright
+Besides the imports, fonts, and small snippets from Python documentation and modified version of the hash method, everything else was made by me, including logos and buttons designs. I have not choose yet which license, so I retain full copyright, but surely you can read, download, modify (fork), redistribute, make a executable and have fun, in a non-commercial way, and giving credits to me (link to the repository page on GitHub), and your modification (forking) or executable should have the same condition. 
+
+## Final thoughts
+Aqui é HUE porra!
 
 
 
