@@ -1,6 +1,9 @@
 # KaraoPy
 A simple software written in Python/Kivy focused on download (karaoke or not) videos from Youtube and make a automatic playlist from it. 
 
+## Summary
+[Why did you make it?] (## Why did you make it?)
+
 ## Why did you make it?
 After I could not make a reserve at a commercial karaoke with my friends, I made a party at home using a very simple Python/Kivy program to add URLs of karaoke videos from Youtube, download it, put in a playlist and play automatically in a TV connected do my notebook. I had time and energy to make it from a very small hobby project to a not-so-small-I-spend-too-much-time-on-this-help-me, resulting in this shit -- I mean, the beautifully constructed Python program. 
 
@@ -76,7 +79,7 @@ Do I hate it? Ok... I'm not a professional coder, I just do it by hobby, but I t
 Surely.
 
 ## Copyright
-Besides the imports, fonts, and small snippets from Python documentation and modified version of the hash method, everything else was made by me, including logos and buttons designs. I have not choose yet which license, so I retain full copyright, but surely you can read, download, modify (fork), redistribute, make a executable and have fun, in a non-commercial way, and giving credits to me (link to the repository page on GitHub), and your modification (forking) or executable should have the same condition. 
+Besides the imports, fonts, and small snippets from Python documentation and modified version of the hash method, everything else was made by me, including logos and buttons designs. I have not choose yet which license, so I retain full copyright, but surely you can read, download, modify (fork), redistribute, make a executable and have fun, in a non-commercial way, and giving credits to me (link to the repository page on GitHub), and your modification (forking) or executable should have the same condition. And also the classic don't blame on me if your computer explodes. You use at your own risk!
 
 ## Final thoughts
 Aqui é HUE porra!
