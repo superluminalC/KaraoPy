@@ -86,7 +86,7 @@ Do I hate it? Ok... I'm not a professional coder, I just do it by hobby, but I t
 Surely.
 
 ## Copyright <a href="#I"></a>
-Besides the imports, fonts, and small snippets from Python documentation and modified version of the hash method, everything else was made by me, including logos and buttons designs. I have not choose yet which license, so I retain full copyright, but surely you can read, download, modify (fork), redistribute, make a executable and have fun, in a non-commercial way, and giving credits to me (link to the repository page on GitHub), and your modification (forking) or executable should have the same condition. And also the classic don't blame on me if your computer explodes. You use at your own risk!
+Besides the imports, fonts, and small snippets from Python documentation and modified version of the hash method, everything else was made by me, including logos and buttons designs. I have not choose yet which license, so I retain full copyright, but surely you can read, download, modify (fork), redistribute, make a executable and have fun, in a non-commercial way, and giving credits to me (link to the repository page on GitHub and my name), and your modification (forking) or executable should have the same condition. And also the classic don't blame on me if your computer explodes. You use at your own risk!
 
 ## Final thoughts
 Aqui é HUE porra!
