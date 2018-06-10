@@ -67,7 +67,7 @@ Yes. Every time the program executes, it checks the folder for new (or deleted) 
 Yes, read question above.
 
 ### How do I modify the metadata of my videos?
-Open the `karaoke_database.csv`, located in the folder you have put your `KaraoPy.py`. The fields are separated by a (not commom) vertical bar (|). Change the respective title and artist field for each entry. You you need to write the metadata with vertical bar, put the contents of that field around double quotes ("This | is a example"). **Do not change the others fields! Do not modify while the program is running!**
+Open the `karaoke_database.csv`, located in the folder you have put your `KaraoPy.py`. The fields are separated by a (not commom) vertical bar (|). Change the respective title and artist field for each entry. If you need to write the metadata with vertical bar, put the contents of that field around double quotes ("This | is a example"). **Do not change the others fields! Do not modify while the program is running!**
 
 ### Why does KaraoPy spawn three different processes?
 Because Kivy. I searched a lot for a solution with no avail. If I use threads, then user interface become very, VERY laggy. I had to live with it.
