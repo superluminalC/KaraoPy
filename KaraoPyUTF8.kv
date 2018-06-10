@@ -1,0 +1,310 @@
+#:kivy 1.10.0
+<ButtonSpacing@Label>:
+    size_hint: 1, None
+    size: root.width, dp(3)
+
+<ResultsButtonArtist@ToggleButton>:
+    size_hint: 1, None
+    size: root.width, dp(20)
+    font_name: app.root.FONT_NAME_1
+    font_size: '15sp'
+    color: 197/255, 202/255, 205/255, 1
+    shorten: True
+    state: 'normal'
+    shorten_from: 'right'
+    valign: 'middle'
+    padding: dp(3), 0
+    background_normal: 'buttons\\artist_button_normal.png'
+    background_down: 'buttons\\artist_pressed.png'
+    #background_color: 32/255, 43/255, 44/255, 1
+    text_size: self.size
+
+<ResultsButtonTitle@ToggleButton>:
+    size_hint: 1, None
+    size: root.width, dp(40)
+    font_name: app.root.FONT_NAME_1
+    font_size: '20sp'
+    color: 1, 1, 1, 1
+    state: 'normal'
+    shorten: True
+    shorten_from: 'right'
+    valign: 'middle'
+    padding: dp(3), 0
+    background_normal: 'buttons\\title_button_normal.png'
+    background_down: 'buttons\\title_pressed.png'
+    #background_color: 43/255, 58/255, 59/255, 1
+    text_size: self.size
+
+<InterfaceWidget>:
+    search_bar_prop: search_bar
+    add_button_prop: add_button
+    play_button_prop: play_button
+    stop_button_prop: stop_button
+    restart_button_prop: restart_button
+    remove_button_prop: remove_button
+    search_title_button_prop: search_title_button
+    search_artist_button_prop: search_artist_button
+    current_title_prop: current_title
+    current_artist_prop: current_artist
+    current_time_prop: current_time
+    current_duration_prop: current_length
+    playlist_list_prop: playlist_list
+    youtube_status_prop: youtube_status
+    results_list_prop: results_list
+    counter_prop: counter
+    add_button_prop: add_button
+
+    FloatLayout:
+        size: root.width - dp(125), dp(120)
+        pos: 0, root.height - dp(120)
+        Label:
+            id: current_title
+            pos: 0, root.height - dp(80)
+            size_hint: (root.width - dp(125)) / root.width, dp(80) / root.height
+            text: ''
+            font_size: '40sp'
+            text_size: self.size
+            color: 4/255, 230/255, 255/255, 1
+            font_name: root.FONT_NAME_1
+            shorten: True
+            shorten_from: 'right'
+            valign: 'middle'
+            padding: dp(10), 0
+            canvas.before:
+                Color:
+                    rgba: 31/255, 31/255, 31/255, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size 
+        
+        Label:
+            id: current_artist
+            pos: 0, root.height - dp(120)
+            size_hint: (root.width - dp(125)) / root.width, dp(40) / root.height
+            text: ''
+            font_size: '25sp'
+            text_size: self.size
+            color: 193/255, 249/255, 255/255, 1
+            font_name: root.FONT_NAME_1
+            shorten: True
+            shorten_from: 'right'
+            valign: 'middle'
+            padding: dp(10), 0
+            canvas.before:
+                Color:
+                    rgba: 11/255, 11/255, 11/255, 1
+                Rectangle:
+                    pos: self.pos
+                    size: self.size 
+
+        Label:
+            id: current_time
+            pos: root.width - dp(125), root.height - dp(80)
+            size_hint: dp(125) / root.width, dp(80) / root.height
+            text: ''
+            font_size: '40sp'
+            text_size: self.size
+            color: 1, 1, 1, 1
+            font_name: root.FONT_NAME_1
+            valign: 'middle'
+            halign: 'center'
+
+        Label:
+            id: current_length
+            pos: root.width - dp(125), root.height - dp(120)
+            size_hint: dp(125) / root.width, dp(40) / root.height
+            text: ''
+            font_size: '25sp'
+            text_size: self.size
+            color: 0.3, 0.3, 0.3, 1
+            font_name: root.FONT_NAME_1
+            valign: 'middle'
+            halign: 'center'
+
+            BoxLayout:
+                orientation: 'horizontal'
+                size: root.width, root.height - dp(120)
+                pos: 0, 0
+
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    ScrollView:
+
+                        Label:
+                            id: playlist_list
+                            padding: dp(10), dp(10)
+                            markup: True
+                            text: ''
+                            text_size: self.width, None
+                            size_hint_y: None
+                            valign: 'top'
+                            height: self.texture_size[1]
+
+                    Label:
+                        id: youtube_status
+                        color: 1, 1, 1, 1
+                        font_size: '15sp'
+                        font_name: root.FONT_NAME_2
+                        size_hint: 1, None
+                        size: self.width, dp(30)
+                        canvas.before:
+                            Color:
+                                rgba: 31/255, 31/255, 31/255, 1
+                            Rectangle:
+                                pos: self.pos
+                                size: self.size 
+                BoxLayout:
+                    orientation: 'vertical'
+
+                    BoxLayout:
+                        orientation: 'horizontal'
+                        size_hint: None, None
+                        size: root.width/2, dp(40)
+
+                        TextInput:
+                            id: search_bar
+                            text: 'Digite um termo de busca ou cole um link'
+                            on_text: root.search()
+                            on_focus: root.search_bar_focused(args[1]) #pass focus property
+                            #on_touch_down: root.search_bar_focused()
+                            #on_touch_up: root.search_bar_focused()
+                            font_name: root.FONT_NAME_1
+                            font_size: '15sp'
+                            border: 4, 4, 4, 4
+                            background_color: 0.4, 0.4, 0.4, 1
+                            cursor_color: 0, 0, 0, 1
+                            foreground_color: 1, 1, 1, 1 
+                            multiline: False
+                            size_hint: None, None
+                            size: root.width/2 - dp(80), dp(40)
+                            write_tab: False
+                            display_border: False
+                            background_active: ''
+                            background_normal:  ''
+                            
+                        ToggleButton:
+                            id: search_title_button
+                            #on_state: root.title_button_state
+                            on_press: root.search_selection('Title')
+                            size_hint: None, None
+                            size: dp(40), dp(40)
+                            background_normal:  "buttons\\search_music.png"
+                            background_down: "buttons\\search_music_clicked.png"
+
+                            border: 16, 16, 16, 16
+
+                        ToggleButton:
+                            id: search_artist_button
+                            #on_state: root.artist_button_state
+                            on_press: root.search_selection('Artist')
+                            background_normal:  "buttons\\search_artist.png"
+                            background_down: "buttons\\search_artist_clicked.png"
+                            size_hint: None, None
+                            size: dp(40), dp(40)
+                    
+                    ScrollView:
+
+                        GridLayout:
+                            id: results_list
+                            cols: 1
+                            size_hint: 1, None
+                            height: self.minimum_height
+                            #spacing: dp(3)
+
+                    FloatLayout:
+                        pos: root.width/2, 0
+                        size: root.width/2, dp(150)
+                        size_hint: None, None
+
+                        canvas.before:
+                            Color:
+                                rgba: 31/255, 31/255, 31/255, 1
+                            Rectangle:
+                                pos: self.pos
+                                size: self.size
+
+                        Label:
+                            id: counter
+                            text: ''
+                            pos: 0, dp(40)
+                            size: dp(100), dp(100)
+                            size_hint: None, None
+                            pos_hint: {'x':0.03}
+                            font_size: '70sp'
+
+                        Label:
+                            text: 'Fila'
+                            size: dp(100), dp(30)
+                            size_hint: None, None
+                            pos_hint: {'x':0.03}
+                            pos: 0, dp(10)
+                            font_size: '15sp'
+
+                        Button:
+                            id: add_button
+                            size: dp(100), dp(100)
+                            size_hint: None, None
+                            pos_hint: {'right': 0.97}
+                            pos: 0, dp(40)
+                            disabled: True
+                            background_normal:  "buttons\\add.png"
+                            background_down: "buttons\\add_clicked.png"
+                            background_disabled_normal:  "buttons\\add_disabled.png"
+                            on_release: root.add_title()
+                        
+                        Button:
+                            id: remove_button
+                            size: dp(100), dp(30)
+                            size_hint: None, None
+                            pos_hint: {'right': 0.97}
+                            pos: 0, dp(10)
+                            disabled: True
+                            on_release: root.remove_title()
+                            background_normal:  "buttons\\remove.png"
+                            background_down: "buttons\\remove_clicked.png"
+                            background_disabled_normal:  "buttons\\remove_disabled.png"
+                        
+                        Button:
+                            id: play_button
+                            disable: True
+                            size_hint: None, None
+                            pos_hint: {'center_x': 0.42}
+                            on_release: root.play()
+                            size: dp(100), dp(100)
+                            pos: 0, dp(40)
+                            background_normal:  "buttons\\pause.png"
+                            background_down: "buttons\\pause_clicked.png"
+                            background_disabled_normal:  "buttons\\pause_disabled.png"
+  
+                        Button:
+                            id: stop_button
+                            on_release: root.stop()
+                            disabled: True
+                            size_hint: None, None
+                            size: dp(50), dp(50)
+                            pos: 1.42 * root.width/2 + dp(50), dp(90)
+                            background_normal:  "buttons\\stop.png"
+                            background_down: "buttons\\stop_clicked.png"
+                            background_disabled_normal:  "buttons\\stop_disabled.png"
+
+                        Button:
+                            id: restart_button
+                            on_release: root.restart()
+                            disabled: True
+                            size_hint: None, None
+                            size: dp(50), dp(50)
+                            pos: 1.42 * root.width/2 + dp(50), dp(40)
+                            background_normal:  "buttons\\restart.png"
+                            background_down: "buttons\\restart_clicked.png"  
+                            background_disabled_normal:  "buttons\\restart_disabled.png"                                                     
+                        
+
+
+                       
+
+
+
+        
+
+
