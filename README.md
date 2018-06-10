@@ -42,7 +42,7 @@ Because I don't know how to carry this imports around, you should download it ma
 * `py -m pip install vlc`
 
 ### Before execute it
-Just after the first imports of script, change the global variable `VLC_PATH` to the folder where the `vlc.exe` is installed. Remember to use double backslashes (\\\) if you are in Windows. Moreover, I recommend you to change the global variable `WAIT_TO_NEXT_SONG` to a value that fit your desires.
+Just after the first imports of script, change the global variable `VLC_PATH` to the folder where the `vlc.exe` is installed. Remember to use double backslashes (\\\\) if you are in Windows. Moreover, I recommend you to change the global variable `WAIT_TO_NEXT_SONG` to a value that fit your desires.
 
 ## Known bugs
 * Kivy
