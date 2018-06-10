@@ -6,7 +6,7 @@ A simple software written in Python/Kivy focused on download (karaoke or not) vi
 [Features](#features)
 [How to use](#how-to-use)
 [FAQ (Frequently Asked Questions)](#faq-frequently-asked-questions) 
-[Copyright](#copyright)
+[Copyright](#copyright-)
 [Final thoughts](#final-thoughts)
 
 ## Why did you make it?  
